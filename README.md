@@ -21,9 +21,10 @@ issues:
 -notice- totally unsure on what to do as far as developing this module.  I think i have a BLE borad somewhere in my shop, I have no idea on how to use it though.
 
 ## Themes
-Black and Neon Blue
+* Black 
+* Neon Blue
 
 ## Release Information
-Fee: Free with product purchase
-Trial: N/A
-Release Date: TBA
+* Fee: Free with product purchase
+* Trial: N/A
+* Release Date: TBA
