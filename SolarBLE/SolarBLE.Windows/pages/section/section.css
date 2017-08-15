@@ -1,5 +1,6 @@
 ﻿.sectionpage section[role=main] {
 	-ms-grid-row: 1;
+
 	-ms-grid-row-span: 2;
 }
 
@@ -63,6 +64,8 @@
 		margin-left: 33px;
 		margin-right: 33px;
 		margin-top: 5px;
+
+        
 	}
 
 	.sectionpage .itemslist .item {

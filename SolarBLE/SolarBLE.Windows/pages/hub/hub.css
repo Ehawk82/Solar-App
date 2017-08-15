@@ -1,6 +1,8 @@
-﻿.hubpage header[role=banner] {
+﻿
+.hubpage header[role=banner] {
     position: relative;
     z-index: 2;
+ 
 }
 
 .hubpage section[role=main] {
@@ -11,16 +13,19 @@
 
 .hubpage .hub .win-hub-surface {
     height: 100%;
+
 }
 
 .hubpage .hub .hero {
     -ms-high-contrast-adjust: none;
-    background-image: url(/images/gray.png);
+    background-image: url('sol.gif');
+    background-position:center;
     background-size: cover;
     margin-left: -80px;
     margin-right: 80px;
     padding: 0;
     width: 780px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
     .hubpage .hub .hero:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
