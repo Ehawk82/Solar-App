@@ -53,8 +53,16 @@
     // Returns an array of sample data that can be added to the application's
     // data list. 
     function generateSampleData() {
-        var itemDescription = " details";
-        var groupDescription = "How to understand your system";
+        var itemDescription1 = "Battery, Panel(s), Regulator & Inverter";
+        var itemDescription2 = "App data and more";
+        var itemDescription3 = "Other info";
+
+        var groupDescription1 = " group 1";
+        var groupDescription2 = " group 2";
+        var groupDescription3 = " group 3";
+        var groupDescription4 = " Ehawk LLC 2017 ©";
+        var groupDescription5 = " group 5";
+        var groupDescription6 = " group 6";
 
         // These three strings encode placeholder images. You will want to set the
         // backgroundImage property in your real data to be URLs to images.
@@ -65,20 +73,20 @@
         // Each of these sample groups must have a unique key to be displayed
         // separately.
         var sampleGroups = [
-            { key: "group1", title: "Group Title: 1", subtitle: "Group Subtitle: 1", backgroundImage: darkGray, description: groupDescription },
-            { key: "group2", title: "Group Title: 2", subtitle: "Group Subtitle: 2", backgroundImage: lightGray, description: groupDescription },
-            { key: "group3", title: "Group Title: 3", subtitle: "Group Subtitle: 3", backgroundImage: mediumGray, description: groupDescription },
-            { key: "group4", title: "Group Title: 4", subtitle: "Group Subtitle: 4", backgroundImage: lightGray, description: groupDescription },
-            { key: "group5", title: "Group Title: 5", subtitle: "Group Subtitle: 5", backgroundImage: mediumGray, description: groupDescription },
-            { key: "group6", title: "Group Title: 6", subtitle: "Group Subtitle: 6", backgroundImage: darkGray, description: groupDescription }
+            { key: "group1", title: "Group Title: 1", subtitle: "Group Subtitle: 1", backgroundImage: darkGray, description: groupDescription1 },
+            { key: "group2", title: "Group Title: 2", subtitle: "Group Subtitle: 2", backgroundImage: lightGray, description: groupDescription2 },
+            { key: "group3", title: "Group Title: 3", subtitle: "Group Subtitle: 3", backgroundImage: mediumGray, description: groupDescription3 },
+            { key: "group4", title: "Group Title: 4", subtitle: "Group Subtitle: 4", backgroundImage: lightGray, description: groupDescription4 },
+            { key: "group5", title: "Group Title: 5", subtitle: "Group Subtitle: 5", backgroundImage: mediumGray, description: groupDescription5 },
+            { key: "group6", title: "Group Title: 6", subtitle: "Group Subtitle: 6", backgroundImage: darkGray, description: groupDescription6 }
         ];
 
         // Each of these sample items should have a reference to a particular
         // group.
         var sampleItems = [
-            { group: sampleGroups[3], title: "Hardware", subtitle: "Item Subtitle: 1", description: itemDescription, backgroundImage: darkGray },
-            { group: sampleGroups[3], title: "Software", subtitle: "Item Subtitle: 2", description: itemDescription, backgroundImage: lightGray },
-            { group: sampleGroups[3], title: "Misc.", subtitle: "Item Subtitle: 3", description: itemDescription, backgroundImage: darkGray }
+            { group: sampleGroups[3], title: "Hardware", subtitle: " ", description: itemDescription1, backgroundImage: darkGray },
+            { group: sampleGroups[3], title: "Software", subtitle: " ", description: itemDescription2, backgroundImage: lightGray },
+            { group: sampleGroups[3], title: "Misc.", subtitle: " ", description: itemDescription3, backgroundImage: darkGray }
         ];
 
         return sampleItems;
