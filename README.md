@@ -24,6 +24,9 @@ issues:
 * Black 
 * Neon Blue
 
+## Naming this App
+Still no clue on what to call it.  For now, SunCrate is what i came up with
+
 ## Release Information
 * Fee: Free with product purchase
 * Trial: N/A
