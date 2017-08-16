@@ -8,18 +8,21 @@
         ready: function (element, options) {
             options = options || {};
             generatePwrData();
+
             generatePwrUse();
+
+            
         },
     });
     
     function generatePwrData() {
         var spnPwr = document.querySelector("#spnPwr");
-        var pwr = "12.67";///get input from BLE for power level
+        var pwr = "8.8";///get input from BLE for power level
 
         spnPwr.innerHTML = pwr + " Volts";
 
         //return console.log(pwr);
-
+        generatePwrPin(pwr);
     }
     function generatePwrUse() {
         var spnUse = document.querySelector("#spnUse");
@@ -29,6 +32,21 @@
 
         //return console.log(pwr);
 
+    }
+
+    function generatePwrPin(pwr) {
+
+        var pwrPin = document.querySelector("#pwrPin"), vin;
+        
+        if (+pwr <= 1) {
+            vin = 7;
+        } else {
+            vin = 12;
+        }
+
+        var pin = (+pwr * +12.5) + +vin;
+        pwrPin.style.transform = 'rotate(' + pin + 'deg)';
+        //console.log(pin);
     }
     // The following lines expose this control constructor as a global. 
     // This lets you use the control as a declarative control inside the 

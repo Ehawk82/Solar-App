@@ -13,6 +13,29 @@
         font-family:Impact;
         font-style:italic;
 }
+#pwrPin {
+    background:#000;
+    box-shadow:0 0 3px #FFF inset;
+    position:relative;
+    z-index:11;
+    transform-origin:right;
+    width:209.5px;
+    height:5px;
+    border-radius:90% 65% 65% 90%;
+    margin-top:-20px;
+}
+#spnDial {
+    position: relative;
+    background:#000;
+    box-shadow:0 0 3px #FFF inset;
+    
+    margin-top: -23px;
+    height: 40px;
+    width: 40px;
+    z-index: 10;
+    border-radius: 20px;
+    margin-left: 190px;
+}
 .fragment {
     -ms-grid-columns: 1fr;
     -ms-grid-rows: 128px 1fr;

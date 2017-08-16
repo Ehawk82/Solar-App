@@ -24,9 +24,10 @@
             hub.onloadingstatechanged = function (args) {
                 if (args.srcElement === hub.element && args.detail.loadingState === "complete") {
                     hub.onloadingstatechanged = null;
+
                 }
             }
-
+            //console.log(element);
             // TODO: Initialize the page here.
         },
 
@@ -38,16 +39,27 @@
 
         section3ItemNavigate: util.markSupportedForProcessing(function (args) {
             var item = Data.getItemReference(section3Items.getAt(args.detail.itemIndex));
+
             nav.navigate("/pages/item/item.html", { item: item });
+
+            
         }),
 
         unload: function () {
+            
+            var content = document.querySelector(".content");
+
+
+
+            //console.log(content);
+
             // TODO: Respond to navigations away from this page.
+            //console.log("away");
         },
 
         updateLayout: function (element) {
             /// <param name="element" domElement="true" />
-
+            
             // TODO: Respond to changes in layout.
         },
     });

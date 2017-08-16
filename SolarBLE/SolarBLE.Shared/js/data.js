@@ -58,6 +58,10 @@
         var itemDescription2 = "App data and more";
         var itemDescription3 = "Other info";
 
+        var itemContent1 = "<strong><i>SunCrate</i></strong> is a system that combines Bluetooth technology with photovoltaic energy, or more commonly known as solar power! <br /> <br /> <strong>The Panels</strong> <br /> <=17v/0.02ah <br /><br /><strong>The Battery Bank</strong><br/>12v/34ah<br /><br /><strong>DC=>AC Inversion</strong><br />300watt/40wh max";
+        var itemContent2 = "Software Content";
+        var itemContent3 = "Misc Content";
+
         var groupDescription = " Ehawk LLC 2017 ©";
 
 
@@ -76,9 +80,9 @@
         // Each of these sample items should have a reference to a particular
         // group.
         var sampleItems = [
-            { group: sampleGroups[0], title: "▪ Hardware", subtitle: " ", description: itemDescription1, backgroundImage: darkGray },
-            { group: sampleGroups[0], title: "▪ Software", subtitle: " ", description: itemDescription2, backgroundImage: lightGray },
-            { group: sampleGroups[0], title: "▪ Misc.", subtitle: " ", description: itemDescription3, backgroundImage: darkGray }
+            { group: sampleGroups[0], title: "▪ Hardware", subtitle: " ", content: itemContent1, description: itemDescription1, backgroundImage: darkGray },
+            { group: sampleGroups[0], title: "▪ Software", subtitle: " ", content: itemContent2, description: itemDescription2, backgroundImage: lightGray },
+            { group: sampleGroups[0], title: "▪ Misc.", subtitle: " ", content: itemContent3, description: itemDescription3, backgroundImage: darkGray }
         ];
 
         return sampleItems;

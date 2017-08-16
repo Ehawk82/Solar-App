@@ -1,4 +1,6 @@
-﻿
+﻿#hd, #sf, #ms {
+    opacity:0;
+}
 .hubpage header[role=banner] {
     position: relative;
     z-index: 2;
@@ -52,7 +54,8 @@
     }
 	
 	.hubpage .hub .section1 img {
-		width: 420px; height: 232px;	
+		width: 420px; height: 232px;
+        z-index:9;
 	}
 
 .hubpage .hub .section2 {

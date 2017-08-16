@@ -11,7 +11,24 @@
 			{
 				document.getElementById("backButton").style.display = "none";
             }
-			// TODO: Initialize the page here.
+            // TODO: Initialize the page here.
+			
+
+            if (item.title === "▪ Hardware") {
+
+                element.querySelector(".content").innerHTML = item.content;
+                //console.log(item);
+            }
+            if (item.title === "▪ Software") {
+
+                element.querySelector(".content").innerHTML = item.content;
+                //console.log(item);
+            }
+            if (item.title === "▪ Misc.") {
+
+                element.querySelector(".content").innerHTML = item.content;
+                //console.log(item);
+            }
         }
     });
 })();
