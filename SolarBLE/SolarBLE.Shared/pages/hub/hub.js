@@ -6,7 +6,7 @@
     var util = WinJS.Utilities;
 
     // Get the groups used by the data-bound sections of the Hub.
-    var section3Group = Data.resolveGroupReference("group4");
+    var section3Group = Data.resolveGroupReference("group");
     var section3Items = Data.getItemsFromGroup(section3Group);
 
     WinJS.UI.Pages.define("/pages/hub/hub.html", {

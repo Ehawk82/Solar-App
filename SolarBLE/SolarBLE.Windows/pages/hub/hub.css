@@ -9,6 +9,7 @@
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     z-index: 1;
+
 }
 
 .hubpage .hub .win-hub-surface {
@@ -51,7 +52,7 @@
     }
 	
 	.hubpage .hub .section1 img {
-		width: 420px; height: 280px;	
+		width: 420px; height: 232px;	
 	}
 
 .hubpage .hub .section2 {

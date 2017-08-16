@@ -1,23 +1,22 @@
 ﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
-
 {
-    "Section1": "Power",
-	"Section1Title": "Battery: ### V",
-    "Section1Subtext": "Usage: ### V ### Ah",
-    "Section1Description": "Overload: ### V",
+    "Section1": " ",
+	"Section1Title": "Battery",
+    "Section1Subtext": "Usage",
+    "Section1Description": " ",
 
-    "Section2": "Panels",
-    "Section2ItemTitle": "Input: ### V ### Ah",
+    "Section2": " ",
+    "Section2ItemTitle": "Input",
     "Section2ItemSubtitle": " ",
     "Section2Subtext": " ",
     "Section2Description": " ",
     
-    "Section3": "Help",
+    "Section3": " 🔍",
 	"Section3ItemTitle": "Understanding your system",
     
-    "Section4": "Settings",
+    "Section4": " ",
     "Section4Description": " ",
 
-    "DescriptionText": "Make a Selection",
+    "DescriptionText": " ",
     "SectionSubtitle": " "
 }

@@ -12,7 +12,7 @@
     generateSampleData().forEach(function (item) {
         list.push(item);
     });
-
+    
     WinJS.Namespace.define("Data", {
         items: groupedItems,
         groups: groupedItems.groups,
@@ -52,43 +52,36 @@
 
     // Returns an array of sample data that can be added to the application's
     // data list. 
+    
     function generateSampleData() {
         var itemDescription1 = "Battery, Panel(s), Regulator & Inverter";
         var itemDescription2 = "App data and more";
         var itemDescription3 = "Other info";
 
-        var groupDescription1 = " group 1";
-        var groupDescription2 = " group 2";
-        var groupDescription3 = " group 3";
-        var groupDescription4 = " Ehawk LLC 2017 ©";
-        var groupDescription5 = " group 5";
-        var groupDescription6 = " group 6";
+        var groupDescription = " Ehawk LLC 2017 ©";
+
 
         // These three strings encode placeholder images. You will want to set the
         // backgroundImage property in your real data to be URLs to images.
         var darkGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY3B0cPoPAANMAcOba1BlAAAAAElFTkSuQmCC";
         var lightGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY7h4+cp/AAhpA3h+ANDKAAAAAElFTkSuQmCC";
         var mediumGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY5g8dcZ/AAY/AsAlWFQ+AAAAAElFTkSuQmCC";
-
+        var powerImg = "../images/meter_nonums.jpg"
         // Each of these sample groups must have a unique key to be displayed
         // separately.
         var sampleGroups = [
-            { key: "group1", title: "Group Title: 1", subtitle: "Group Subtitle: 1", backgroundImage: darkGray, description: groupDescription1 },
-            { key: "group2", title: "Group Title: 2", subtitle: "Group Subtitle: 2", backgroundImage: lightGray, description: groupDescription2 },
-            { key: "group3", title: "Group Title: 3", subtitle: "Group Subtitle: 3", backgroundImage: mediumGray, description: groupDescription3 },
-            { key: "group4", title: "Group Title: 4", subtitle: "Group Subtitle: 4", backgroundImage: lightGray, description: groupDescription4 },
-            { key: "group5", title: "Group Title: 5", subtitle: "Group Subtitle: 5", backgroundImage: mediumGray, description: groupDescription5 },
-            { key: "group6", title: "Group Title: 6", subtitle: "Group Subtitle: 6", backgroundImage: darkGray, description: groupDescription6 }
+            { key: "group", title: "Group Title: 4", subtitle: "Group Subtitle: 4", backgroundImage: lightGray, description: groupDescription }
         ];
 
         // Each of these sample items should have a reference to a particular
         // group.
         var sampleItems = [
-            { group: sampleGroups[3], title: "Hardware", subtitle: " ", description: itemDescription1, backgroundImage: darkGray },
-            { group: sampleGroups[3], title: "Software", subtitle: " ", description: itemDescription2, backgroundImage: lightGray },
-            { group: sampleGroups[3], title: "Misc.", subtitle: " ", description: itemDescription3, backgroundImage: darkGray }
+            { group: sampleGroups[0], title: "▪ Hardware", subtitle: " ", description: itemDescription1, backgroundImage: darkGray },
+            { group: sampleGroups[0], title: "▪ Software", subtitle: " ", description: itemDescription2, backgroundImage: lightGray },
+            { group: sampleGroups[0], title: "▪ Misc.", subtitle: " ", description: itemDescription3, backgroundImage: darkGray }
         ];
 
         return sampleItems;
     }
+    
 })();
