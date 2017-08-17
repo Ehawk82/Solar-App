@@ -10,14 +10,33 @@
             generatePwrData();
 
             generatePwrUse();
-
-            
+            ///console.log(element);
+            sliderBtn(element)
         },
     });
-    
+    function sliderBtn(element) {
+        var btn = document.createElement("div");
+        btn.style.position = "absolute";
+        btn.innerHTML = "⬅";
+        btn.style.left = "10px";
+
+
+        element.appendChild(btn);
+        btn.addEventListener("click", hideSun(btn), false);
+
+    }
+    function hideSun(btn) {
+        return function() {
+            var xx = document.querySelector(".hero");
+
+            xx.className = "hero_gone";
+            btn.style.left = "-100%";
+            //console.log(xx);
+        }
+    }
     function generatePwrData() {
         var spnPwr = document.querySelector("#spnPwr");
-        var pwr = "8.8";///get input from BLE for power level
+        var pwr = 11.73;///get input from BLE for power level
 
         spnPwr.innerHTML = pwr + " Volts";
 

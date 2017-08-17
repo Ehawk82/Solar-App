@@ -18,7 +18,21 @@
     height: 100%;
 
 }
+.hubpage .hub .hero_gone {
 
+    transition:all 1s;
+    -ms-high-contrast-adjust: none;
+    background-image: url('sol.gif');
+    background-position:center;
+    background-size: cover;
+    
+    margin-left: -870px;
+    margin-right: 80px;
+
+    padding: 0;
+    width: 780px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .hubpage .hub .hero {
     -ms-high-contrast-adjust: none;
     background-image: url('sol.gif');
@@ -26,6 +40,7 @@
     background-size: cover;
     margin-left: -80px;
     margin-right: 80px;
+
     padding: 0;
     width: 780px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
