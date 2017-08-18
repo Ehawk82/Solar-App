@@ -16,9 +16,13 @@
     // data-win-control attribute. 
     function generatePanelInput() {
         var pnIn = document.querySelector("#pnIn");
+        var ampIn = document.querySelector("#ampIn");
+
         var pnlPwr = 16.6;
+        var ampPwr = 0.1;
 
         pnIn.innerHTML = pnlPwr + " Volts";
+        ampIn.innerHTML = ampPwr + " Amps";
         //console.log(pnIn);
     }
 
