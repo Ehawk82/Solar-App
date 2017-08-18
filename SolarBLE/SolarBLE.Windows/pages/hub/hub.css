@@ -124,12 +124,12 @@
     }
 
     .hubpage .hub .section3 .win-item {
-        height: 310px;
+        height: 335px;
         width: 310px;
     }
 
         .hubpage .hub .section3 .win-item img {
-            height: 270px;
+            height: 310px;
             width: 310px;
         }
 
@@ -180,4 +180,23 @@
 }
 .win-hub-section-header {
     color: transparent !important;
+}
+.slate {
+    background:black;
+    position:absolute;
+    top:100vh;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index:99;
+}
+.slate_full {
+    transition:all 500ms;
+    background:black;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index:99;
 }

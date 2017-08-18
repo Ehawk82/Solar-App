@@ -7,28 +7,52 @@
         // the resulting elements have been parented to the DOM. 
         ready: function (element, options) {
             options = options || {};
-            var img1sect4 = element.querySelector("#img1sect4");
-            img1sect4.addEventListener("click", trigger1, false);
-            var img2sect4 = element.querySelector("#img2sect4");
-            img2sect4.addEventListener("click", trigger2, false);
-            var img3sect4 = element.querySelector("#img3sect4");
-            img3sect4.addEventListener("click", trigger3, false);
-            //console.log(img1sect4);
+            var imgClassSect4 = element.querySelectorAll(".imgClassSect4");
+            for (var k = 0; k < imgClassSect4.length; k++) {
+                imgClassSect4[k].addEventListener("click", triggerMain(k, element, imgClassSect4), false);
+            }
         },
     });
 
     // The following lines expose this control constructor as a global. 
     // This lets you use the control as a declarative control inside the 
-    // data-win-control attribute. 
-    function trigger1() {
-        console.log("working trigger1");
+    // data-win-control attribute.
+    function triggerMain(k, element, imgClassSect4) {
+        return function () {
+            console.log(imgClassSect4[k]);
+            imgClassSect4[3].style.display = "none";
+            imgClassSect4[2].style.display = "none";
+            imgClassSect4[1].style.display = "none";
+            imgClassSect4[0].style.display = "none";
+            var nm,
+                slate = document.createElement("div");
+                
+                slate.className = "slate";
+
+            
+                if (k === 0) {//main
+                    nm = "main";
+                }
+                if (k === 1) {//btn 1
+                    nm = "sect 1";
+                }
+                if (k === 2) {//btn 2
+                    nm = "sect 2";
+                }
+                if (k === 3) {//btn 3
+                    nm = "sect 3";
+                }
+
+                slate.innerHTML = "slate: " + nm;
+
+                document.body.appendChild(slate);
+
+                setTimeout(function () { slate.className = "slate_full"; }, .1);
+                
+         
+        } 
     }
-    function trigger2() {
-        console.log("working trigger2");
-    }
-    function trigger3() {
-        console.log("working trigger3");
-    }
+
     WinJS.Namespace.define("HubApps_SectionControls", {
         Section4Control: ControlConstructor
     });
