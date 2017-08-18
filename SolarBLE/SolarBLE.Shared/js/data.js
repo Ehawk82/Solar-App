@@ -59,7 +59,7 @@
         var itemDescription3 = "Other info";
 
         var itemContent1 = "<strong><i>SunCrate</i></strong> is a system that combines Bluetooth technology with photovoltaic energy, or more commonly known as solar power! <br /> <br /> <strong>The Panels</strong> <br /> <=17v/0.02ah <br /><br /><strong>The Battery Bank</strong><br/>12v/34ah<br /><br /><strong>DC=>AC Inversion</strong><br />300watt/40wh max";
-        var itemContent2 = "Software Content";
+        var itemContent2 = "The <strong><i>SunCrate</i></strong> app is a simple, client-side, dynamic user interface that allows a smooth experience when monitoring the <strong><i>SunCrate</i></strong> system.<br /><br /><strong>Power</strong><br />The power section allows you to both monitor your battery level, and track overall usage.<br /><br /><strong>Panels</strong><br />The Panel section allows for a more closer look at how much photovoltaic energy you are collecting in real time.<br /><br /><strong>Help and Other information</strong><br />You can browse through and view much other valuable data regarding your system and usage.  There is also a feature that lets you track your carbon footprint.";
         var itemContent3 = "Misc Content";
 
         var groupDescription = " Ehawk LLC 2017 ©";
@@ -70,7 +70,10 @@
         var darkGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY3B0cPoPAANMAcOba1BlAAAAAElFTkSuQmCC";
         var lightGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY7h4+cp/AAhpA3h+ANDKAAAAAElFTkSuQmCC";
         var mediumGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY5g8dcZ/AAY/AsAlWFQ+AAAAAElFTkSuQmCC";
-        var powerImg = "../images/meter_nonums.jpg"
+        var powerImg = "../images/meter_nonums.jpg";
+        var circuitImg = "../images/circuit.png";
+        var discImg = "../images/disc.png";
+        var gearsImg = "../images/gears.png";
         // Each of these sample groups must have a unique key to be displayed
         // separately.
         var sampleGroups = [
@@ -80,9 +83,9 @@
         // Each of these sample items should have a reference to a particular
         // group.
         var sampleItems = [
-            { group: sampleGroups[0], title: "▪ Hardware", subtitle: " ", content: itemContent1, description: itemDescription1, backgroundImage: darkGray },
-            { group: sampleGroups[0], title: "▪ Software", subtitle: " ", content: itemContent2, description: itemDescription2, backgroundImage: lightGray },
-            { group: sampleGroups[0], title: "▪ Misc.", subtitle: " ", content: itemContent3, description: itemDescription3, backgroundImage: darkGray }
+            { group: sampleGroups[0], title: "▪ Hardware", subtitle: " ", content: itemContent1, description: itemDescription1, backgroundImage: circuitImg },
+            { group: sampleGroups[0], title: "▪ Software", subtitle: " ", content: itemContent2, description: itemDescription2, backgroundImage: discImg },
+            { group: sampleGroups[0], title: "▪ Misc.", subtitle: " ", content: itemContent3, description: itemDescription3, backgroundImage: gearsImg }
         ];
 
         return sampleItems;

@@ -1,6 +1,20 @@
 ﻿#hd, #sf, #ms {
     opacity:0;
 }
+#imgMainSect4 {
+    background-position:center;
+    background-size:100% auto;
+}
+    #imgMainSect4:hover {
+        opacity:.7;
+    }
+#img1sect4,  #img2sect4,  #img3sect4 {
+    background-position:center;
+    background-size:100% auto;
+}
+    #img1sect4:hover, #img2sect4:hover, #img3sect4:hover {
+        opacity:.7;
+    }
 .hubpage header[role=banner] {
     position: relative;
     z-index: 2;
@@ -20,12 +34,12 @@
 }
 .hubpage .hub .hero_gone {
 
-    transition:all 1s;
+
     -ms-high-contrast-adjust: none;
     background-image: url('sol.gif');
     background-position:center;
     background-size: cover;
-    
+
     margin-left: -870px;
     margin-right: 80px;
 
@@ -33,6 +47,7 @@
     width: 780px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 .hubpage .hub .hero {
     -ms-high-contrast-adjust: none;
     background-image: url('sol.gif');
@@ -49,10 +64,12 @@
     .hubpage .hub .hero:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
         margin-left: 80px;
         margin-right: -80px;
+        color:transparent;
     }
 
     .hubpage .hub .hero .win-hub-section-header {
         display: none;
+
     }
 
 .hubpage .hub .section1 {
@@ -61,6 +78,7 @@
 
     .hubpage .hub .section1 .win-hub-section-content {
         overflow-y: hidden;
+        
     }
 
     .hubpage .hub .section1 .subtext {
@@ -106,12 +124,12 @@
     }
 
     .hubpage .hub .section3 .win-item {
-        height: 229px;
+        height: 310px;
         width: 310px;
     }
 
         .hubpage .hub .section3 .win-item img {
-            height: 150px;
+            height: 270px;
             width: 310px;
         }
 
@@ -142,7 +160,7 @@
     }
 
         .hubpage .hub .section4 .sub-image-row img {
-            height: 95px;
+            height: 130px;
             width: 130px;
         }
 		
@@ -159,4 +177,7 @@
 .label-mediummid {
 	font-size: 15pt;
 	line-height: 17.5pt;
+}
+.win-hub-section-header {
+    color: transparent !important;
 }
