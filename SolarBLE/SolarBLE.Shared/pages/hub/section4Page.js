@@ -17,33 +17,29 @@
     // The following lines expose this control constructor as a global. 
     // This lets you use the control as a declarative control inside the 
     // data-win-control attribute.
+    var mainSect4;
+
+    mainSect4 = {
+        0: "Main Section 4",
+        1: "1st Section 4",
+        2: "2nd Section 4",
+        3: "3rd Section 4"
+    };
+
     function triggerMain(k, element, imgClassSect4) {
         return function () {
-            console.log(imgClassSect4[k]);
+            //console.log(imgClassSect4[k]);
+
             imgClassSect4[3].style.display = "none";
             imgClassSect4[2].style.display = "none";
             imgClassSect4[1].style.display = "none";
             imgClassSect4[0].style.display = "none";
-            var nm,
-                slate = document.createElement("div");
+
+            var slate = document.createElement("div");
                 
                 slate.className = "slate";
 
-            
-                if (k === 0) {//main
-                    nm = "main";
-                }
-                if (k === 1) {//btn 1
-                    nm = "sect 1";
-                }
-                if (k === 2) {//btn 2
-                    nm = "sect 2";
-                }
-                if (k === 3) {//btn 3
-                    nm = "sect 3";
-                }
-
-                slate.innerHTML = "slate: " + nm;
+                slate.innerHTML = mainSect4[k];
 
                 document.body.appendChild(slate);
 
